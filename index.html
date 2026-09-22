@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICMS 설비관리 — 다운로드</title>
+<meta name="description" content="정보통신설비 유지보수·관리 및 성능점검 프로그램 ICMS 설비관리 설치파일과 사용 안내서를 받습니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #f8fafc; --card: #ffffff; --line: #e2e8f0; --ink: #0f172a; --muted: #64748b;
+    --brand: #2553e0; --brand-ink: #ffffff; --brand-weak: #eef2ff; --ok: #047857; --warn-bg: #fffbeb; --warn: #92400e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1120; --card: #111827; --line: #1f2937; --ink: #e5e7eb; --muted: #94a3b8;
+      --brand: #6b8cff; --brand-ink: #0b1120; --brand-weak: #1e2a4a; --ok: #6ee7b7; --warn-bg: #2a1e05; --warn: #fcd34d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Pretendard Variable', 'Malgun Gothic', system-ui, sans-serif; line-height: 1.6; word-break: keep-all; }
+  a { color: var(--brand); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  header { border-bottom: 1px solid var(--line); background: var(--card); }
+  header .wrap { display: flex; align-items: center; gap: 10px; height: 60px; }
+  .logo { width: 34px; height: 34px; border-radius: 10px; background: var(--brand); display: grid; place-items: center; }
+  .logo svg { width: 20px; height: 20px; }
+  header b { font-size: 17px; }
+
+  .hero { padding: 48px 0 28px; }
+  .hero h1 { margin: 0; font-size: clamp(26px, 5vw, 38px); line-height: 1.25; letter-spacing: -0.5px; }
+  .hero p { margin: 12px 0 0; color: var(--muted); font-size: 17px; }
+
+  .grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; }
+  .card .desc { margin: 0 0 18px; color: var(--muted); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 12px;
+         background: var(--brand); color: var(--brand-ink); font-weight: 700; font-size: 16px; text-decoration: none; border: 0; }
+  .btn.secondary { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
+  .btn svg { width: 20px; height: 20px; }
+  .meta { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .meta b { color: var(--ink); }
+  .note { margin-top: 16px; padding: 12px 14px; border-radius: 10px; background: var(--warn-bg); color: var(--warn); font-size: 14px; }
+
+  section { margin-top: 36px; }
+  section > h2 { font-size: 22px; margin: 0 0 14px; }
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; display: grid; gap: 10px; }
+  ol.steps li { counter-increment: s; position: relative; padding: 14px 16px 14px 56px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  ol.steps li::before { content: counter(s); position: absolute; left: 16px; top: 14px; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: var(--brand-ink); font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+  ol.steps small { display: block; color: var(--muted); }
+  .ui { display: inline-block; border: 1px solid var(--line); border-radius: 6px; padding: 0 6px; font-size: 14px; background: var(--bg); white-space: nowrap; }
+  ul.check { padding-left: 20px; margin: 0; }
+  ul.check li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 15px; }
+  tr:last-child th, tr:last-child td { border-bottom: 0; }
+  th { width: 30%; background: var(--bg); font-weight: 600; }
+  footer { margin: 48px 0 32px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9"/><path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5"/><circle cx="12" cy="9" r="2"/><path d="M16.2 4.8c2 2 2.26 5.11.8 7.47"/><path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1"/><path d="M9.5 18h5"/><path d="m8 22 4-11 4 11"/></svg></div>
+    <b>ICMS 설비관리</b>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>정보통신설비 유지보수·관리<br>성능점검 통합관리 프로그램</h1>
+    <p>사무실 PC 에 설치하고, 현장에서는 휴대폰으로 점검표·사진·QR 점검을 입력합니다.</p>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h2>프로그램 설치파일</h2>
+      <p class="desc">Windows 10 / 11 (64비트) · 설치 후 30일 체험</p>
+      <a id="download" class="btn" href="https://github.com/snoopykkt-del/icms-releases/releases/latest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span id="download-label">최신 버전 다운로드</span>
+      </a>
+      <div class="meta" id="release-meta">최신 버전을 확인하는 중…</div>
+      <div class="note">설치할 때 <b>‘Windows 의 PC 보호’</b> 가 뜨면 <span class="ui">추가 정보</span> → <span class="ui">실행</span> 을 누르세요.</div>
+    </div>
+
+    <div class="card">
+      <h2>사용 안내서 (PDF)</h2>
+      <p class="desc">처음 설치부터 휴대폰 사용, 운영까지 한 권에 담았습니다. 인쇄해서 보셔도 됩니다.</p>
+      <a class="btn secondary" href="ICMS-Manual.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15h6"/><path d="M9 11h2"/></svg>
+        안내서 받기
+      </a>
+      <div class="meta">
+        <b>처음 설치</b> — 설치 · 관리자 계정 · 라이선스 등록<br>
+        <b>휴대폰에서 쓰기</b> — 접속 · 바로가기 만들기 · QR 점검<br>
+        <b>운영</b> — 사용자 관리 · 업데이트 · 백업 · 사무실 밖 접속 · 문제 해결
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>설치 순서</h2>
+    <ol class="steps">
+      <li><b>설치파일 받기</b> — 위의 <span class="ui">최신 버전 다운로드</span>.<small>사무실에 늘 켜 두는 PC 에 설치하세요. 그 PC 가 서버 역할을 합니다.</small></li>
+      <li><b>설치</b> — ‘Windows 의 PC 보호’ → <span class="ui">추가 정보</span> → <span class="ui">실행</span>, 관리자 확인 → <span class="ui">예</span>.<small>기본 설치 위치: C:\Program Files\ICMS</small></li>
+      <li><b>관리자 계정 만들기</b> — 처음 켜면 로그인 화면의 <span class="ui">가입 신청</span>. 가장 먼저 가입한 계정이 관리자가 됩니다.</li>
+      <li><b>라이선스 등록</b> — 30일 안에 <span class="ui">도움말 › 라이선스</span> 의 요청 코드를 판매처에 보내고, 받은 키를 등록합니다.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>휴대폰에서 쓰기</h2>
+    <ol class="steps">
+      <li><b>같은 Wi-Fi</b> 에 휴대폰을 연결합니다.</li>
+      <li>PC 프로그램 위쪽의 <span class="ui">휴대폰으로 열기</span> 에 나오는 QR 을 휴대폰 카메라로 찍습니다.<small>현장 점검용은 <b>‘QR 스캔까지’</b> 쪽을 권합니다. 처음 한 번 ‘연결이 비공개로…’ 가 뜨면 고급 → 계속.</small></li>
+      <li>크롬 <span class="ui">⋮</span> → <span class="ui">설치 및 바로가기 만들기</span> → <span class="ui">바로가기 만들기</span> 로 홈 화면 아이콘을 만듭니다.<small>아이폰은 Safari 공유 버튼 → 홈 화면에 추가. ‘이 앱을 설치할 수 없습니다’ 는 정상입니다.</small></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>필요한 것</h2>
+    <table>
+      <tr><th>PC</th><td>Windows 10 / 11 (64비트), 여유 공간 1GB, 설치할 때 관리자 권한</td></tr>
+      <tr><th>네트워크</th><td>휴대폰과 PC 가 같은 공유기(Wi-Fi). 인터넷은 설치파일 받기·업데이트에만 필요</td></tr>
+      <tr><th>휴대폰</th><td>안드로이드 Chrome, 아이폰 Safari</td></tr>
+      <tr><th>업데이트</th><td>새 버전이 나오면 프로그램이 알아서 받아 설치합니다</td></tr>
+    </table>
+  </section>
+
+  <footer>ICMS 설비관리 · 정보통신설비 유지보수·관리 및 성능점검</footer>
+</main>
+
+<script>
+  // 최신 릴리스를 찾아 다운로드 버튼을 설치파일에 바로 연결한다 (못 찾으면 릴리스 페이지로)
+  (async () => {
+    const meta = document.getElementById('release-meta')
+    try {
+      const res = await fetch('https://api.github.com/repos/snoopykkt-del/icms-releases/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+      if (!res.ok) throw new Error(res.status)
+      const rel = await res.json()
+      const exe = (rel.assets || []).find((a) => /^ICMS-Setup-.*\.exe$/i.test(a.name))
+      if (!exe) throw new Error('no exe')
+      document.getElementById('download').href = exe.browser_download_url
+      document.getElementById('download-label').textContent = `최신 버전 다운로드 (v${rel.tag_name.replace(/^v/, '')})`
+      const d = new Date(rel.published_at)
+      meta.innerHTML = `<b>${exe.name}</b> · ${(exe.size / 1048576).toFixed(0)}MB · ${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()} 배포`
+    } catch {
+      meta.textContent = '버튼을 누르면 최신 버전 페이지로 이동합니다. (Assets 에서 ICMS-Setup-….exe 를 받으세요)'
+    }
+  })()
+</script>
+</body>
+</html>
